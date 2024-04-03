@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Métricas en el desarrollo de software</title>
+</head>
+<body>
+    <h1>Métricas del Modelo de Análisis</h1>
+    <p>En la fase de obtención de requisitos y establecimiento del fundamento para el 
+        diseño de software, es crucial tener una visión interna de la calidad del modelo 
+        de análisis. Aunque existen pocas métricas específicas para el análisis y la 
+        especificación, es posible adaptar métricas existentes para evaluar el modelo 
+        de análisis y predecir el tamaño del sistema resultante. Se explorarán métricas 
+        orientadas a la función, como la métrica "bang", así como métricas de calidad de 
+        especificación en las siguientes secciones. Estas métricas son fundamentales para 
+        garantizar la eficacia y calidad del proceso de desarrollo de software desde las etapas iniciales. </p><br><br>
+
+    <h1>Métricas Basadas en la Función</h1>
+    <p>La métrica de Punto de Función (PF) se emplea para prever el tamaño de un 
+        sistema basado en un modelo de análisis. Utilizando un diagrama de flujo 
+        de datos del software "Hogar Seguro", se identifican las entradas de 
+        usuario, salidas de usuario, consultas de usuario, archivos y interfaces 
+        externas como parámetros clave para calcular el PF. Se muestra una tabla 
+        de factor de ponderación que asigna valores a cada parámetro. 
+        Posteriormente, se ajusta la cuenta total utilizando una fórmula que 
+        incluye valores de ajuste de complejidad. Basándose en el valor de PF 
+        obtenido, el equipo del proyecto puede estimar el tamaño de implementación 
+        del software. Mediante datos históricos sobre el número de líneas de 
+        código por PF y la productividad del equipo, el administrador del proyecto 
+        puede realizar una planificación más precisa basada en el modelo de 
+        análisis. </p><br><br>
+
+    <h1>La Métrica Bang </h1>
+    <p>La métrica "Bang" desarrollada por Tom DeMarco proporciona una indicación 
+        independiente de la implementación del tamaño del sistema basada en el 
+        modelo de análisis. Se calcula evaluando un conjunto de primitivas del 
+        modelo de análisis, que incluyen primitivas funcionales, elementos de 
+        datos, objetos, relaciones y transiciones. Además, se determinan medidas 
+        adicionales para diversas primitivas. DeMarco sugiere que la mayoría del 
+        software puede clasificarse en dominios de función o de datos según la 
+        relación entre las relaciones y las primitivas funcionales. También 
+        recomienda el uso de cuentas de muestras de datos por primitiva para 
+        controlar la uniformidad de la participación en diferentes modelos 
+        dentro de una aplicación. Una vez calculada la métrica "Bang", se puede 
+        asociar con el esfuerzo y el tamaño utilizando historiales anteriores y 
+        tablas calibradas específicas de la organización. </p><br><br>
+
+    <h1>Métricas de la Calidad de Especificación </h1>
+    <p>Para evaluar la calidad del modelo de análisis y la especificación de 
+        requisitos, se utilizan diversas características, como especificidad, 
+        corrección, completitud, comprensión, capacidad de verificación, 
+        consistencia interna y externa, capacidad de logro, concisión, 
+        trazabilidad, capacidad de modificación, exactitud y capacidad de 
+        reutilización. Davis sugiere que estas características pueden ser 
+        cuantificadas mediante métricas específicas. Por ejemplo, la especificidad 
+        de los requisitos se puede medir mediante la consistencia de la 
+        interpretación de los revisores para cada requisito, representada por la 
+        métrica Q1. La completitud de los requisitos funcionales se evalúa 
+        mediante la relación entre el número de requisitos únicos y el número de 
+        entradas y estados especificados, utilizando la métrica Q2. Para incorporar 
+        los requisitos no funcionales en una métrica global, se considera el grado de 
+        validación de los requisitos, representado por la métrica Q3. Estas métricas 
+        proporcionan una forma objetiva de evaluar la calidad de la especificación de 
+        requisitos. </p><br><br>
+
+</body>
+</html>

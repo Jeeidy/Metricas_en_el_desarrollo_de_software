@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Métricas en el desarrollo de software</title>
+</head>
+<body>
+    <h1>Las Métricas y la Calidad de Software</h1>
+    <p>Son criterios y medidas utilizadas para evaluar qué tan bien se desarrolla 
+        una solución de software por un grupo. Son una brújula que te ayuda a 
+        entender la eficiencia, confiabilidad y rendimiento del software, 
+        asegurando que cumpla con los estándares y requisitos establecidos. </p> <br><br>
+
+        <p>“La totalidad de rasgos y características de un producto, proceso 
+            o servicio que sostiene la habilidad de satisfacer estados o 
+            necesidades implícitas” [Mcdermid ’91]. </p><br><br>
+
+            <p><strong>Por ejemplo</strong>, medir los errores detectados por hora de revisión 
+                o por hora de prueba proporciona información sobre la eficiencia 
+                de estas actividades en el proceso de desarrollo de software. </p><br><br>
+
+                <img src="/img/img1.png" alt="">
+
+    <h1>Visión General de los Factores que Afectan a la Calidad </h1>
+    <p>McCall y Cavano [John A. McDermid ‘91] establecieron un conjunto de factores 
+       de calidad que son fundamentales para evaluar la calidad del software desde 
+       tres perspectivas: operación, revisión y transición del producto. Estos 
+       factores, conocidos como un "marco de trabajo", permiten a los 
+       administradores identificar aspectos importantes del proyecto y evaluar el 
+       progreso del desarrollo de manera cuantitativa. Además, fomentan la 
+       interacción del personal de calidad en el proceso de desarrollo y 
+       proporcionan pautas para mejorar los estándares de calidad en el futuro. 
+       Aunque los métodos de cálculo han evolucionado desde su trabajo en 1978, los 
+       atributos que indican la calidad del software siguen siendo relevantes. 
+       Adoptar estos factores de calidad como una lista de verificación puede 
+       garantizar la calidad del software incluso en el futuro, independientemente de 
+       los cambios en las tecnologías de computación. </p><br><br>
+
+    
+       <h1>Medida de la Calidad</h1>
+       <p>Existen múltiples medidas de calidad del software, entre las cuales se 
+        destacan la corrección, facilidad de mantenimiento, integridad y facilidad de uso.  </p><br><br>
+
+        <ul>
+        <li>
+            La corrección se refiere a la capacidad del software para realizar las 
+            funciones requeridas sin errores, medida comúnmente por la cantidad de 
+            defectos por mil líneas de código (KLDC).  
+        </li>
+
+        <li>
+            La facilidad de mantenimiento evalúa la habilidad de modificar el software, 
+            con métricas como el tiempo medio de cambio (TMC) o el costo de corrección de defectos.  
+        </li>
+
+        <li>
+            La integridad evalúa la capacidad del software para resistir ataques, con medidas de amenaza y seguridad.  
+        </li>
+
+        <li>
+            La facilidad de uso se refiere a la amigabilidad del software para los usuarios, 
+            medida por la destreza requerida para aprenderlo, el tiempo para ser eficiente, 
+            el aumento en productividad y la valoración subjetiva de los usuarios. 
+            Estos factores son ejemplos de las múltiples medidas de calidad del software propuestas.
+        </li>
+        </ul>
+
+    <h1>Medidas de Fiabilidad y de Disponibilidad</h1>
+    <p>Los primeros trabajos sobre fiabilidad del software intentaron aplicar los 
+        modelos matemáticos de la teoría de fiabilidad del hardware para predecir 
+        la fiabilidad del software. Sin embargo, a diferencia del hardware, los 
+        fallos del software son principalmente debidos a problemas de diseño o 
+        implementación. Una medida común de fiabilidad es el tiempo medio entre 
+        fallos (TMEF), que incluye el tiempo medio de fallo (TMDF) y el tiempo 
+        medio de reparación (TMDR). Esta medida es considerada más útil que 
+        contar los errores por líneas de código, ya que refleja la experiencia 
+        del usuario final con los fallos. Además, la disponibilidad del software, 
+        que es la probabilidad de que funcione correctamente en un momento dado, 
+        se calcula como el TMDF dividido entre la suma del TMDF y el TMDR, 
+        multiplicado por 100%. Tanto el TMEF como la disponibilidad son sensibles 
+        al TMDF y al TMDR, siendo esta última medida más influenciada por el tiempo 
+        medio de reparación, lo que refleja la facilidad de mantenimiento del software. </p><br><br>
+
+    <p>TMEF = TMDF+TMDR  
+    (TMDF (tiempo medio de fallo) y TMDR (tiempo medio de reparación)). </p>
+
+    <h1>Eficacia de la Eliminación de Defectos</h1>
+    <p>a eficacia de la eliminación de defectos (EED) es una métrica importante para evaluar 
+        la calidad del software y el proceso de desarrollo. Se calcula dividiendo el número 
+        de errores encontrados antes de la entrega del software (E) entre la suma de esos 
+        errores más los defectos encontrados después de la entrega (D). Un valor ideal de EED 
+        es 1, indicando que no se han encontrado defectos en el software. A medida que aumenta 
+        el número de errores encontrados antes de la entrega, es probable que el número de 
+        defectos encontrados después de la entrega disminuya, lo que demuestra una mejor 
+        filtración de errores antes de que se conviertan en defectos. La EED se puede 
+        utilizar para evaluar la capacidad del equipo de proyecto para encontrar errores 
+        en diferentes etapas del desarrollo de software. Un objetivo de calidad es lograr un 
+        EED cercano a 1, lo que indica que los errores se filtran efectivamente antes de pasar 
+        a la siguiente actividad. Esto fomenta el uso de técnicas para encontrar errores antes 
+        de la entrega del software. La EED también puede utilizarse para evaluar la habilidad 
+        del equipo en la detección de errores, lo que puede afectar el avance del proyecto. </p><br><br>
+
+    <h1>Factores de Calidad de McCall </h1>
+    <p>McCall y sus colegas propusieron una categorización de factores que afectan la calidad 
+        del software, divididos en factores medibles directa e indirectamente. Estos factores 
+        se agrupan en tres aspectos clave del software: operación, transición y revisión del producto. 
+        Algunos de estos factores incluyen corrección, fiabilidad, usabilidad, integridad, eficiencia, 
+        facilidad de mantenimiento, flexibilidad, facilidad de prueba, portabilidad, reusabilidad e 
+        interoperabilidad. Para medir estos factores, se utilizan métricas como facilidad de auditoría, 
+        exactitud, estandarización de comunicaciones, compleción, concisión, consistencia, estandarización 
+        de datos, tolerancia al error, eficiencia de ejecución, capacidad de expansión, generalidad, 
+        independencia del hardware, instrumentación, modularidad, operatividad, trazabilidad y 
+        facilidad de formación. La relación entre los factores de calidad y las métricas se ilustra 
+        en la figura 4.2, donde el peso asignado a cada métrica puede variar según el contexto del 
+        proyecto y las necesidades específicas del negocio. </p><br><br>
+
+    <h1>FURPS (Funcionality, Usability, Reliability, Performance, Supportability) </h1>
+    <p>El modelo FURPS, desarrollado por Hewlett-Packard, es un conjunto de factores clave para evaluar la calidad del software: </p><br><br>
+
+    <ul>
+        <li>
+            <strong>Funcionalidad: </strong> Evalúa las características y capacidades del programa, su generalidad y seguridad. 
+        </li>
+
+        <li>
+            <strong>Usabilidad:</strong> Considera los aspectos humanos, la estética, la consistencia y la documentación general para medir la facilidad de uso. 
+        </li>
+
+        <li>
+            <strong>Fiabilidad:</strong> Se basa en la frecuencia y gravedad de los fallos, la exactitud de las salidas, el tiempo medio entre fallos, la capacidad de recuperación y la capacidad de predicción del programa. 
+        </li>
+
+        <li>
+            <strong>Rendimiento:</strong> Se mide por la velocidad de procesamiento, el tiempo de respuesta, el consumo de recursos y la eficacia general. 
+        </li>
+
+        <li>
+            <strong>Capacidad de soporte:</strong> Incluye la extensibilidad, adaptabilidad, servicios de mantenimiento, capacidad de prueba, compatibilidad, facilidad de configuración e instalación, y la capacidad para localizar problemas.
+        </li>
+    </ul>
+
+    
+</body>
+</html>
